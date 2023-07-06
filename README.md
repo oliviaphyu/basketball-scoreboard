@@ -1,2 +1,1 @@
-# basketball-scoreboard
- 
+Basketball-Scoreboard-Solo-Project-in-Scrimba
