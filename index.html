@@ -13,36 +13,37 @@
         <h1>Basketball Scoreboard 🏀</h1>
         <div class="s-container">
             <div class="c1">
-                <div class="inner-1">
+                <div class="inner-1" id="home-team">
                     <h2>Home</h2>
                 </div>
                 <div class="inner-2">
-                    <h2>0</h2>
+                    <h2 id="home-pts">0</h2>
                 </div>
                 <div class="inner-3">
-                    <button>+1</button>
-                    <button>+2</button>
-                    <button>+3</button>
+                    <button onclick="add('home',1)">+1</button>
+                    <button onclick="add('home',2)">+2</button>
+                    <button onclick="add('home',3)">+3</button>
                 </div>
             </div>
             <div class="vs">
                 <h3>VS</h3>
             </div>
             <div class="c1">
-                <div class="inner-1">
+                <div class="inner-1" id="guest-team">
                     <h2>Guest</h2>
                 </div>
                 <div class="inner-2">
-                    <h2>0</h2>
+                    <h2 id="guest-pts">0</h2>
                 </div>
                 <div class="inner-3">
-                    <button>+1</button>
-                    <button>+2</button>
-                    <button>+3</button>
+                    <button onclick="add('guest',1)">+1</button>
+                    <button onclick="add('guest',2)">+2</button>
+                    <button onclick="add('guest',3)">+3</button>
                 </div>
             </div>
         </div>
-        <button class="btnReset">Reset</button>
+        <button class="btnReset" onclick="reset()">Reset</button>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
