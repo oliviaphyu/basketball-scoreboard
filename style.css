@@ -16,10 +16,17 @@
     padding: 0;
 }
 
-.wrapper{
-    min-width: 1364px;
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: var(--dark-blue);
-    height: 100vh;
+}
+
+.wrapper{
+    min-width: 50.5625rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,9 +34,11 @@
 }
 
 .wrapper h1{
+    margin-bottom: 5rem;
+    text-align: center;
     font-family: var(--main-font);
     color: var(--white);
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
     line-height: 2rem;
 }
@@ -39,8 +48,6 @@
     align-items: flex-start;
     justify-content: space-around;
     /* background-color: #FFFFFF; */
-    min-width: 60rem;
-    height: 50vh;
 }
 
 .c1{
@@ -49,19 +56,20 @@
     align-items: center;
     justify-content: space-between;
     /* background-color: aquamarine; */
-    min-width: 20rem;
-    height: 20rem;
+    width: 15rem;
+    height: 15rem;
+    margin: 0 3rem;
 }
 
 .c1 .inner-1{
-    width: 16rem;
+    width: 11.47719rem;
     background-color: #F2662A;
     border-radius: 6.25rem 6.25rem 0rem 0rem;
 }
 
 .c1 .inner-1 h2{
     font-family: var(--main-font);
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
     text-align: center;
     color: var(--white);
@@ -70,21 +78,16 @@
 
 .c1 .inner-2{
     margin-top: 0.5rem;
-    width: 16rem;
+    width: 11.47719rem;
     background-color: var(--black);
     height: 12rem;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
 }
 
 .c1 .inner-2 h2{
     text-align: center;
-    position: relative;
-    top: 0.5rem;
     font-family: var(--side-font);
     color: var(--dark-orange);
-    font-size: 8rem;
+    font-size: 6rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -99,11 +102,11 @@
 }
 
 .c1 .inner-3 button{
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 3rem;
+    height: 3rem;
     border: 3px solid var(--white);
     font-family: var(--side-font);
-    font-size: 2.25rem;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -118,8 +121,8 @@
 
 .vs{
     margin-top: 0.5rem;
-    width: 13.6rem;
-    height: 2.9rem;
+    width: 9.54975rem;
+    height: 2.05888rem;
     background-color: var(--dark-orange);
     border-radius: 3.125rem;
 }
@@ -128,18 +131,20 @@
     text-align: center;
     color: var(--black);
     font-family: var(--main-font);
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
 
 .btnReset{
-    width: 16.3125rem;
-    height: 4.75rem;
+    margin-top: 5rem;
+    width: 11.4333rem;
+    height: 3.15406rem;
+    font-size: 1.25rem;
     color: var(--white);
     font-family: var(--main-font);
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -150,4 +155,84 @@
 
 .btnReset:hover{
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.attribution{
+    margin: 2rem;
+    text-align: center;
+    color: var(--dark-orange);
+    font-family: var(--main-font);
+    font-size: 1.2rem;
+  }
+  
+  .attribution a{
+    color: var(--white);
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .attribution a:hover{
+    text-decoration: underline;
+  }
+
+@media (max-width:850px) {
+    .wrapper{
+        min-width: 450px;
+        justify-content: space-evenly;
+    }
+
+    .wrapper h1{
+        font-size: 1.5rem;
+    }
+
+    .c1{
+        width: 11rem;
+        height: 11rem;
+        margin: 0 0.3rem;
+    }
+
+    .c1 .inner-1{
+        width: 9rem;
+    }
+
+    .c1 .inner-1 h2{
+        font-size: 1rem;
+    }
+
+    .c1 .inner-2{
+        margin-top: 0.2rem;
+        width: 9rem;
+    }
+
+    .c1 .inner-2 h2{
+        font-size: 5rem;
+    }
+
+    .c1 .inner-3{
+        margin-top: 0.2rem;
+    }
+
+    .c1 .inner-3 button{
+        width: 2.2rem;
+        height: 2.2rem;
+        font-size: 1rem;
+        border: 2px solid var(--white);
+    }
+
+    .vs{
+        width: 6rem;
+        height: 1.5rem;
+    }
+    
+    .vs h3{
+        font-size: 1.2rem;
+    }
+
+    .btnReset{
+        width: 8rem;
+        height: 2rem;
+        font-size: 1rem;
+    }
+
 }
