@@ -26,7 +26,7 @@ body{
 }
 
 .wrapper{
-    min-width: 50.5625rem;
+    max-width: 50.5625rem;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -179,7 +179,7 @@ body{
 
 @media (max-width:850px) {
     .wrapper{
-        min-width: 450px;
+        min-width: 400px;
         justify-content: space-evenly;
     }
 
@@ -204,6 +204,7 @@ body{
     .c1 .inner-2{
         margin-top: 0.2rem;
         width: 9rem;
+        height: 10rem;
     }
 
     .c1 .inner-2 h2{
@@ -236,4 +237,62 @@ body{
         font-size: 1rem;
     }
 
+}
+
+@media (max-width:480px) {
+    .wrapper{
+        min-width: 300px;
+    }
+    .s-container{
+        margin: 0 auto;
+    }
+    .c1{
+        width: 9rem;
+        height: 9rem;
+    }
+
+    .c1 .inner-1{
+        width: 7rem;
+    }
+
+    .c1 .inner-1 h2{
+        font-size: 0.8rem;
+    }
+
+    .c1 .inner-2{
+        margin-top: 0.1rem;
+        width: 7rem;
+        height: 8rem;
+    }
+
+    .c1 .inner-2 h2{
+        font-size: 4rem;
+    }
+
+    .c1 .inner-3{
+        margin-top: 0.1rem;
+        gap: 0.5rem;
+    }
+
+    .c1 .inner-3 button{
+        width: 2rem;
+        height: 2rem;
+        font-size: 0.8rem;
+        border: 2px solid var(--white);
+    }
+
+    .vs{
+        width: 4rem;
+        height: 1rem;
+    }
+    
+    .vs h3{
+        font-size: 0.8rem;
+    }
+
+    .btnReset{
+        width: 8rem;
+        height: 2rem;
+        font-size: 1rem;
+    }
 }
